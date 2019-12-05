@@ -42,6 +42,7 @@ Agenda
 * Test
   * Jest
   * Enzyme
+* Plugin maven para incluir apps react
 
 Ideas
 
@@ -58,10 +59,11 @@ Ideas
 
 =====
 
-* Libreria Javascript
-* Crear interfaces sencillas
+* Libreria Javascript para crear interfaces sencillas
 * De manera declarativa
-* Componentes encapsulados
+* Basadas en Componentes (manejan su propio estado)
+* Como un Lego, a partir de piezas sencillas crear estructuras más complejas
+* Learn Once, Write Anywhere - DOM, Native, VR
 
 =====
 
@@ -184,11 +186,16 @@ const isEmpty = true
 * [CodePen](codepen.io)
   * Preprocesador de Javascript: Babel
   * Librerías:
-    * React
-    * ReactDOM
+    * React - Funcionalidad común (createElement, Component, PureComponent, Children...)
+    * ReactDOM - Función ligada a aplicaciones web (render, unmountComponentAtNode...)
 
 * [CodeSandbox](codesandbox.io)
   * React template
+_____
+
+Learn Once, Write Anywhere
+
+\* [react-dom](https://github.com/facebook/react/tree/master/packages/react-dom), [react-native](https://facebook.github.io/react-native/), [react-vr](https://facebook.github.io/react-360/)...
 
 _____
 
@@ -227,6 +234,10 @@ function Hello() {
 </code></pre>
 
 <pre><code data-trim class="hljs">
+const Hello = () => <h1>Hello World</h1>
+</code></pre>
+
+<pre><code data-trim class="hljs">
 // Class Components
 class Hello extends React.Component {
     render() {
@@ -254,15 +265,10 @@ En el caso de los componentes usamos JSX
 ReactDOM.render(&lt;Hello /&gt;, document.getElementById('root'))
 </code></pre>
 
-_____
-
-<iframe
-     src="https://codesandbox.io/embed/vanilla-vanilla?fontsize=24&hidenavigation=1&theme=dark"
-     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
-     title="Vanilla"
-     allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb"
-     sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
-   ></iframe>
+<iframe height="350" style="width: 100%;" scrolling="no" title="Hello Component" src="https://codepen.io/sapetti/embed/KKwpXVZ?height=350&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/sapetti/pen/KKwpXVZ'>Hello Component</a> by Cesar Sapetti
+  (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
 
 =====
 
@@ -273,15 +279,20 @@ _____
 * One way data flow
 * camelCase
 
+_____
+
 <pre><code data-trim class="hljs">
 function Hello(props) {
   return <h1>Hello { props.name }</h1>;
 }
-
-function Hello({ name }) {
-  return <h1>Hello { name }</h1>;
-}
 </code></pre>
+
+<iframe height="265" style="width: 100%;" scrolling="no" title="Props" src="https://codepen.io/sapetti/embed/zYxGaNy?height=265&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/sapetti/pen/zYxGaNy'>Props</a> by Cesar Sapetti
+  (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+_____
 
 <pre><code data-trim class="hljs">
 class Hello extends React.Component {
@@ -289,29 +300,29 @@ class Hello extends React.Component {
         return <h1>Hello {this.props.name}</h1>
     }
 }
-
-class Hello extends React.Component {
-    render() {
-        const { name } = this.props
-        return <h1>Hello { name }</h1>
-    }
-}
 </code></pre>
+
+<iframe height="265" style="width: 100%;" scrolling="no" title="Props Class" src="https://codepen.io/sapetti/embed/eYmNKWP?height=265&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/sapetti/pen/eYmNKWP'>Props Class</a> by Cesar Sapetti
+  (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+_____
 
 <pre><code data-trim class="hljs">
-const element = <Hello name='Walter' />
+&lt;Hello name='Walter' /&gt;
 
-const element = <Hello { name: 'Walter' } />
-</code></pre>
+&lt;Hello { name: 'Walter' } /&gt;
 
-</code></pre>js
 function Hello({ name, surname }) {
-  return <h1>Hello { name } { surname }</h1>
+  return &lt;h1&gt;Hello { name } { surname }&lt;/h1&gt;
 }
 
 const user = { name: 'Walter', surname: 'White' }
-const element = <Hello { ...user } />
+const element = &lt;Hello { ...user } /&gt;
 </code></pre>
+
+_____
 
 ## Prop Types
 
@@ -323,11 +334,13 @@ const element = <Hello { ...user } />
 * Validación personalizada
 * No se incluye en la librería de React
 
-</code></pre> bash
+_____
+
+<pre><code data-trim class="hljs">
 npm i prop-types
 </code></pre>
 
-</code></pre>js
+<pre><code data-trim class="hljs">
 import PropTypes from 'prop-types'
 
 function Hello({ name, surname }) {
@@ -339,38 +352,44 @@ Hello.propTypes = {
     surname:    PropTypes.string
 }
 
-const element = <Hello surname={2} />
+&lt;Hello surname={2} /&gt;
 </code></pre>
+
+_____
 
 ## Default Props
 
-</code></pre>js
+<pre><code data-trim class="hljs">
 import PropTypes from 'prop-types'
 
 function Hello({ name, surname }) {
-  return <h1>Hello { name } { surname }</h1>
+  return &lt;h1&gt;Hello { name } { surname }&lt;/h1&gt;
 }
 
 Hello.defaultProps = {
     surname: 'White'
 }
 
-const element = <Hello name='Walter' />
+&lt;Hello name='Walter' /&gt;
+// Walter White
 </code></pre>
 
-</code></pre>js
+_____
+
+<pre><code data-trim class="hljs">
 function Hello({ name, surname = 'White' }) {
-  return <h1>Hello { name } { surname }</h1>
+  return &lt;h1&gt;Hello { name } { surname }&lt;/h1&gt;
 }
 
-const element = <Hello name='Walter' />
+&lt;Hello name='Walter' /&gt;
+// Walter White
 </code></pre>
 
 =====
 
 ## State
 
-* El estado es local
+* El estado es local (componentes de clase***)
 * No es accesible desde otro componente
 * Cada componente tiene su propio estado
 * Crearemos la propiedad de clase state que contendrá el estado del componente
@@ -380,38 +399,23 @@ const element = <Hello name='Walter' />
 * setState puede ser asincrono!!
 * setState hace un shallow merge del objeto que se envía con el estado existente
 
-<pre><code data-trim class="hljs">
-class ClickCounter extends React.Component {
-  state = {
-    counter: 0,
-  }
+_____
 
-  countClicks = () => {
-    this.setState({
-      counter: this.state.counter + 1
-    })
-  }
-  
-  render() {
-    const { counter } = this.state
-    return (
-      <div>
-        <p>Clicked { counter } times</p>
-        <button onClick={ this.countClicks }>+</button>
-      </div>
-    )
-  }
-}
-</code></pre>
+<iframe height="550" style="width: 100%;" scrolling="no" title="Props Class" src="https://codepen.io/sapetti/embed/oNgXPZM?height=550&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/sapetti/pen/oNgXPZM'>Props Class</a> by Cesar Sapetti
+  (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+_____
 
 * Cada componente tiene su propio estado
 
-<pre><code data-trim class="hljs">
-<div>
-    <ClickCounter />
-    <ClickCounter />
-</div>
-</code></pre>
+<iframe height="550" style="width: 100%;" scrolling="no" title="First State Component" src="https://codepen.io/sapetti/embed/RwNPYjO?height=550&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/sapetti/pen/RwNPYjO'>First State Component</a> by Cesar Sapetti
+  (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+_____
 
 * setState puede ser asincrono!!
 
@@ -428,6 +432,15 @@ this.setState({ counter: this.state.counter + 1}) // counter: 0 + 1
 // ...
 this.state.counter // 1
 </code></pre>
+
+_____
+
+<iframe height="650" style="width: 100%;" scrolling="no" title="setState is async" src="https://codepen.io/sapetti/embed/povJOLe?height=650&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/sapetti/pen/povJOLe'>setState is async</a> by Cesar Sapetti
+  (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+_____
 
 * Mejor usar setState(callback)
 
