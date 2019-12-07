@@ -183,13 +183,13 @@ const isEmpty = true
 
 ## Renderizado
 
-* [CodePen](codepen.io)
+* [codepen.io](https://codepen.io/)
   * Preprocesador de Javascript: Babel
   * Librerías:
-    * React - Funcionalidad común (createElement, Component, PureComponent, Children...)
-    * ReactDOM - Función ligada a aplicaciones web (render, unmountComponentAtNode...)
+    * React - Funcionalidad común (createElement, Component, Children...)
+    * ReactDOM - Funcionalidad ligada al navegador (render, mount...)
 
-* [CodeSandbox](codesandbox.io)
+* [codesandbox.io](https://codesandbox.io/)
   * React template
 _____
 
@@ -197,6 +197,9 @@ Learn Once, Write Anywhere
 
 \* [react-dom](https://github.com/facebook/react/tree/master/packages/react-dom), [react-native](https://facebook.github.io/react-native/), [react-vr](https://facebook.github.io/react-360/)...
 
+_____
+
+Vamos a probar a renderizar nuestro propio elemento
 _____
 
 <pre><code data-trim class="hljs">
@@ -269,6 +272,10 @@ ReactDOM.render(&lt;Hello /&gt;, document.getElementById('root'))
   See the Pen <a href='https://codepen.io/sapetti/pen/KKwpXVZ'>Hello Component</a> by Cesar Sapetti
   (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
+
+_____
+
+Componentes controlados?????
 
 =====
 
@@ -408,7 +415,7 @@ _____
 
 _____
 
-* Cada componente tiene su propio estado
+Cada componente tiene su propio estado
 
 <iframe height="550" style="width: 100%;" scrolling="no" title="First State Component" src="https://codepen.io/sapetti/embed/RwNPYjO?height=550&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/sapetti/pen/RwNPYjO'>First State Component</a> by Cesar Sapetti
@@ -417,7 +424,7 @@ _____
 
 _____
 
-* setState puede ser asincrono!!
+setState puede ser asincrono!!
 
 <pre><code data-trim class="hljs">
 state = { counter: 0 }
@@ -442,7 +449,7 @@ _____
 
 _____
 
-* Mejor usar setState(callback)
+Mejor usar setState(callback)
 
 <pre><code data-trim class="hljs">
 this.setState((state, props) => {
@@ -450,7 +457,16 @@ this.setState((state, props) => {
 })
 </code></pre>
 
-* setState hace un merge del objeto que se envía con el estado existente
+_____
+
+<iframe height="650" style="width: 100%;" scrolling="no" title="setState is async" src="https://codepen.io/sapetti/embed/rNaVqgE?height=650&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/sapetti/pen/rNaVqgE'>setState is async</a> by Cesar Sapetti
+  (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+_____
+
+setState hace un merge shallow del objeto que se envía con el estado existente
 
 <pre><code data-trim class="hljs">
 state = {
@@ -462,46 +478,190 @@ this.setState({ user: 'Skyler' })
 // state: { counter: 0, user: 'Skyler' }
 </code></pre>
 
+_____
+
+Ojo con los objetos
+<iframe height="600" style="width: 100%;" scrolling="no" title="setState shallow merge" src="https://codepen.io/sapetti/embed/BayNGar?height=600&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/sapetti/pen/BayNGar'>setState shallow merge</a> by Cesar Sapetti
+  (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
 =====
 
 ## Ciclo de vida
 
 [Métodos comunes del ciclo de vida](http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/)
 
-* constructor: Para inicializar el estado local o enlazar eventos. Recibe las props y debe hacer super(props)
-* render: Obligatorio. Devuelve elementos React, Arrays, Fragmentos, Portales, Strings, Numeros, Booleanos o nulos.
+![](../images/lifecycle-simple.png)
 
-[Reconciliación](https://es.reactjs.org/docs/reconciliation.html)
+[React Reconciliation](https://es.reactjs.org/docs/reconciliation.html)
 
 _____
 
-* componentDidMount: Suscribirse a servicios
-* componentDidUpdate
-* componentWillUnmount: Borrar las suscripciones a servicios
+Funciones puras:
+
+* No hace side effects
+* No modifica estado del componente (bucles infinitos)
+* Devuelve el mismo resultado para cada vez que se invoca
+
+_____
+
+### Render phase
+
+* constructor: Para inicializar el estado local o enlazar eventos. Recibe las props y debe hacer super(props).
+* render: Obligatorio. Devuelve elementos React, Arrays, Fragmentos, Portales, Strings, Numeros, Booleanos o nulos.
+
+_____
+
+### Commit phase
+
+* componentDidMount: Suscribirse a servicios.
+* componentDidUpdate: Realizar operaciones en el DOM tras una actualización o peticiones de red. Recibe el estado y las propiedades anteriores. Cuidado si se llama setState, puede crear un bucle infinito.
+* componentWillUnmount: Borrar las suscripciones a servicios.
+
+_____
+
+<iframe height="600" style="width: 100%;" scrolling="no" title="Component lifecycle" src="https://codepen.io/sapetti/embed/GRgJPOb?height=600&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/sapetti/pen/GRgJPOb'>Component lifecycle</a> by Cesar Sapetti
+  (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+_____
+
+Hay más métodos.
 
 Según sea necesario, React realizará llamadas a métodos del ciclo de vida de los componentes
+
+_____
 
 * Al crear un componente se llaman los siguientes métodos
   * constructor
   * getDerivedStateFromProps
   * render
   * componentDidMount
+
+_____
+
 * Al lanzar una actualización a través del estado o las props
   * getDerivedStateFromProps
   * shouldComponentUpdate
   * render
   * getSnapshotBeforeUpdate
   * componentDidUpdate
+
+_____
+
 * Al eliminar el componente del DOM
   * componentWillUnmount
+
+_____
+
 * Al ocurrir un error
   * getDerivedStateFromError
   * componentDidCatch
 
-Funciones puras:
+=====
 
-* No modifica estado del componente (bucles infinitos)
-* Devuelve el mismo resultado para cada vez que se invoca
-* No hace side effects
+## Children
 
-## Styles
+* Los componentes pueden tener ningun, uno o varios hijos
+* Podemos **React.children** para tratarlos
+
+_____
+
+<iframe height="600" style="width: 100%;" scrolling="no" title="props.children" src="https://codepen.io/sapetti/embed/KKwdrrL?height=600&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/sapetti/pen/KKwdrrL'>props.children</a> by Cesar Sapetti
+  (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+_____
+
+
+
+=====
+
+## Eventos
+
+=====
+
+## Estilos
+
+* Hay distintas formas de aplicar estilos
+* No hay una que predomine sobre las otras
+* Todas tienen pros y contras
+
+_____
+
+### Estilos en línea
+
+* Pasar los estilos al atributo **style**
+* Los estilos deben pasarse como un objeto
+* Las nombres de las propiedades son __camelCase__ (font-weight -> fontWeight)
+
+_____
+
+<iframe height="600" style="width: 100%;" scrolling="no" title="Inline style" src="https://codepen.io/sapetti/embed/povjOme?height=600&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/sapetti/pen/povjOme'>Inline style</a> by Cesar Sapetti
+  (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+_____
+
+Podemos extraer los estilos a un objeto
+
+<iframe height="500" style="width: 100%;" scrolling="no" title="Inline style object" src="https://codepen.io/sapetti/embed/yLyYRaz?height=500&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/sapetti/pen/yLyYRaz'>Inline style object</a> by Cesar Sapetti
+  (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+_____
+
+### CSS-in-JS
+
+* Escribir CSS usando JS
+* Utilizando librerías como:
+  * [glamorous](https://glamorous.rocks/)
+  * [styled-components](https://www.styled-components.com/)
+  * [Emotion](https://emotion.sh/docs/introduction)
+
+_____
+
+styled-component
+
+<iframe height="265" style="width: 100%;" scrolling="no" title="CSS-in-JS" src="https://codepen.io/sapetti/embed/LYEpXQb?height=265&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/sapetti/pen/LYEpXQb'>CSS-in-JS</a> by Cesar Sapetti
+  (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+_____
+
+### Hojas de estilo CSS
+
+* Importamos los estilos directamente
+* Podemos importar una hoja de estilos en el raíz de la aplicación para aplicar a todos
+
+![](../images/import-css.png)
+
+_____
+
+* O podemos importar una hoja de estilo por componente 
+  
+  ![](../images/css-by-component.png)
+
+_____
+
+### className
+
+* **class** es una palabra reservada
+* En su lugar usaremos className
+* React nos advierte si no lo cumplimos
+
+![](../images/warningClass.png)
+
+_____
+
+<iframe height="600" style="width: 100%;" scrolling="no" title="className" src="https://codepen.io/sapetti/embed/oNgjaor?height=600&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/sapetti/pen/oNgjaor'>className</a> by Cesar Sapetti
+  (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+_____
