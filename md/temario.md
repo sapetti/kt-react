@@ -2,47 +2,66 @@
 
 =====
 
-Agenda
+### Agenda 
 
 * React – Conceptos principales
-* JSX
-* Renderizado de elementos
+* [JSX](https://es.reactjs.org/docs/introducing-jsx.html)
+* [Renderizado de elementos](https://es.reactjs.org/docs/rendering-elements.html)
 * Componentes y tipos de componente
 * Props
-* State
-* Ciclo de vida de los componentes
+* [State](https://es.reactjs.org/docs/react-component.html#setstate)
+* [Ciclo de vida de los componentes](https://es.reactjs.org/docs/react-component.html#the-component-lifecycle)
 * Children
 * Eventos
 * Estilos
+
+_____
+
 * Patrones de diseño
-  * [HoC](https://es.reactjs.org/docs/higher-order-components.html)
+  * [HOC](https://es.reactjs.org/docs/higher-order-components.html)
   * [Render Props](https://reactjs.org/docs/render-props.html)
 * [Fragmentos](https://es.reactjs.org/docs/fragments.html)
 * [Contexto](https://es.reactjs.org/docs/context.html)
-* Error boundaries
+* [Error boundaries](https://es.reactjs.org/docs/error-boundaries.html)
 * [Lazy/Suspense](https://es.reactjs.org/docs/code-splitting.html)
-* Portals
-* Hooks
-* PureComponent
-* React.memo
-* Webpack – Conceptos básicos
+* [Portals](https://es.reactjs.org/docs/portals.html)
+* [Hooks](https://es.reactjs.org/docs/hooks-intro.html)
+* [PureComponent](https://es.reactjs.org/docs/react-api.html#reactpurecomponent)
+* [React.memo](https://es.reactjs.org/blog/2018/10/23/react-v-16-6.html#reactmemo)
+* [React.lazy](https://es.reactjs.org/blog/2018/10/23/react-v-16-6.html#reactlazy-code-splitting-with-suspense)
+* [StrictMode](https://es.reactjs.org/docs/strict-mode.html)
+* [Webpack](https://webpack.js.org/) – Conceptos básicos
+
+_____
+
 * create-react-app
 * Extensiones VS Code
 * [React Developer Tools](https://es.reactjs.org/docs/optimizing-performance.html#virtualize-long-lists)
 * Redux – Conceptos básicos
   * Redux Developer Tools
 * Otras librerías
-  * React Router
+  * [React Router](https://reacttraining.com/react-router/) - Amiga Framework
   * GraphQL
   * [Formik](https://github.com/jaredpalmer/formik) - Formularios
   * [Downshift](https://github.com/downshift-js/downshift) - dropdown/autocomplete/select
   * [Virtualizar listas largas](https://es.reactjs.org/docs/optimizing-performance.html#virtualize-long-lists)
     * [react-window](https://react-window.now.sh/)
-    * [react-virtualized](https://bvaughn.github.io/react-virtualized/)
+    * [react-virtualized](https://bvaughn.github.io/react-virtualized/) - Amiga Framework
 * Test
-  * Jest
-  * Enzyme
-* Plugin maven para incluir apps react
+  * [Jest](https://jestjs.io/) - Amiga Framework
+  * [Enzyme](https://airbnb.io/enzyme/)
+* [Plugin maven para incluir apps react](https://github.com/eirslett/frontend-maven-plugin)
+
+_____
+
+* Amiga - Framework Front
+  * Application
+  * Router
+  * Redux: Actions, Reactions...
+  * i18n
+  * Logging
+  * Mocking
+  * Test
 
 Ideas
 
@@ -56,6 +75,16 @@ Ideas
 * Create-react-app zero configuration
 * Synthesize events
 * npx create-react-app my-app
+* chiste tutorial code tutorial code
+* Flux -> Redux
+* Redux imagenes
+* Redux boilerplate
+* Single source of truth - un unico estado
+* State es solo lectura - unidirectional data-flow
+* Changes performed with pure functions, avoids non-deterministic events
+* Redux lifecycle - imagenes 
+* https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Operadores/Sintaxis_Spread
+* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters
 
 =====
 
@@ -227,7 +256,7 @@ _____
 
 =====
 
-### Componentes y Tipos Componentes
+### Componentes
 
 <pre><code data-trim class="hljs">
 // Function Components
@@ -273,10 +302,6 @@ ReactDOM.render(&lt;Hello /&gt;, document.getElementById('root'))
   (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
-_____
-
-Componentes controlados?????
-
 =====
 
 ## Props
@@ -294,7 +319,7 @@ function Hello(props) {
 }
 </code></pre>
 
-<iframe height="265" style="width: 100%;" scrolling="no" title="Props" src="https://codepen.io/sapetti/embed/zYxGaNy?height=265&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe height="400" style="width: 100%;" scrolling="no" title="Props" src="https://codepen.io/sapetti/embed/zYxGaNy?height=400&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/sapetti/pen/zYxGaNy'>Props</a> by Cesar Sapetti
   (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
@@ -309,7 +334,7 @@ class Hello extends React.Component {
 }
 </code></pre>
 
-<iframe height="265" style="width: 100%;" scrolling="no" title="Props Class" src="https://codepen.io/sapetti/embed/eYmNKWP?height=265&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe height="400" style="width: 100%;" scrolling="no" title="Props Class" src="https://codepen.io/sapetti/embed/eYmNKWP?height=400&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/sapetti/pen/eYmNKWP'>Props Class</a> by Cesar Sapetti
   (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
@@ -391,6 +416,69 @@ function Hello({ name, surname = 'White' }) {
 &lt;Hello name='Walter' /&gt;
 // Walter White
 </code></pre>
+
+=====
+
+## Eventos
+
+* Igual que los eventos en el DOM pero en camelCase
+  onclick -> onClick, onchange -> onChange
+* Reciben una función y no un string
+  onclick="requestData()" -> onClick={requestData}
+* Hay que llamar a preventDefault, no podemos devolver false para evitarlo
+* El handler recibe un evento sintético de React (evita problemas de incompatibilidad entre navegadores)
+* [Listado de eventos soportados](https://es.reactjs.org/docs/events.html#supported-events)
+
+_____
+
+#### Definición de handlers - Funciones flecha
+
+<iframe height="400" style="width: 100%;" scrolling="no" title="Events - Arrow Functions" src="https://codepen.io/sapetti/embed/WNbrpEV?height=400&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/sapetti/pen/WNbrpEV'>Events - Arrow Functions</a> by Cesar Sapetti
+  (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+<sub>Problemas de performance</sub>
+
+_____
+
+#### Definición de handlers - Bind
+
+<iframe height="400" style="width: 100%;" scrolling="no" title="Events - Bind" src="https://codepen.io/sapetti/embed/LYEGLPP?height=400&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/sapetti/pen/LYEGLPP'>Events - Bind</a> by Cesar Sapetti
+  (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+<sub>Mucho código y muy repetitivo</sub>
+
+_____
+
+#### Definición de handlers - Campos públicos de clases
+
+<iframe height="400" style="width: 100%;" scrolling="no" title="Events - Public field" src="https://codepen.io/sapetti/embed/bGNERGo?height=400&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/sapetti/pen/bGNERGo'>Events - Public field</a> by Cesar Sapetti
+  (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+<sub>Experimental. Por defecto incluida con create-react-app</sub>
+
+=====
+
+## Ref
+
+Es una forma de acceder a los nodos del DOM o a elementos creados en el metodo de renderizado
+
+* Controlar el foco
+* Selección de texto
+* Reproducción de medios
+* Inputs de tipo file
+
+_____
+
+<iframe height="600" style="width: 100%;" scrolling="no" title="Refs" src="https://codepen.io/sapetti/embed/OJPQPXm?height=600&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/sapetti/pen/OJPQPXm'>Refs</a> by Cesar Sapetti
+  (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
 
 =====
 
@@ -488,6 +576,31 @@ Ojo con los objetos
 
 =====
 
+## Componentes controlados y no controlados
+
+* Los componentes controlados son aquellos en los que cada campo del formulario tiene un handler para cambios
+* Los compnentes no controlados son aquellos que no tienen handlers por cada campo y recopilan el estado en un único momento (onSubmit)
+
+_____
+
+### Componentes controlados
+
+<iframe height="600" style="width: 100%;" scrolling="no" title="Controlado" src="https://codepen.io/sapetti/embed/qBExEMb?height=600&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/sapetti/pen/qBExEMb'>Controlado</a> by Cesar Sapetti
+  (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+_____
+
+### Componentes no controlados
+
+<iframe height="600" style="width: 100% !important;" scrolling="no" title="No Controlado" src="https://codepen.io/sapetti/embed/VwYQevY?height=600&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/sapetti/pen/VwYQevY'>No Controlado</a> by Cesar Sapetti
+  (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+=====
+
 ## Ciclo de vida
 
 [Métodos comunes del ciclo de vida](http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/)
@@ -564,7 +677,8 @@ _____
 ## Children
 
 * Los componentes pueden tener ningun, uno o varios hijos
-* Podemos **React.children** para tratarlos
+* Podemos usar la API de **React.Children** para tratarlos
+* Favorecen la composición
 
 _____
 
@@ -575,11 +689,36 @@ _____
 
 _____
 
+* props.children puede ser de cualquier tipo (array, objeto, función...)
+* Esto hace que trabajar con los hijos sea un poco caótico
 
+_____
 
-=====
+Un unico hijo no funciona en este ejemplo
 
-## Eventos
+<iframe height="600" style="width: 100%;" scrolling="no" title="props.children fail!" src="https://codepen.io/sapetti/embed/bGNVQZO?height=600&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/sapetti/pen/bGNVQZO'>props.children fail!</a> by Cesar Sapetti
+  (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+_____
+
+React.Children
+
+<iframe height="600" style="width: 150%;" scrolling="no" title="React.Children" src="https://codepen.io/sapetti/embed/NWPxdxX?height=600&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/sapetti/pen/NWPxdxX'>React.Children</a> by Cesar Sapetti
+  (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+_____
+
+API React.Children
+
+* map
+* count
+* forEach (como map pero devuelve un array)
+* toArray (para ordenación)
+* only (forzar que solo se pueda poner un hijo)
 
 =====
 
@@ -625,19 +764,21 @@ _____
 
 _____
 
-styled-component
+#### styled-components
 
-<iframe height="265" style="width: 100%;" scrolling="no" title="CSS-in-JS" src="https://codepen.io/sapetti/embed/LYEpXQb?height=265&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe height="500" style="width: 100%;" scrolling="no" title="CSS-in-JS" src="https://codepen.io/sapetti/embed/LYEpXQb?height=500&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/sapetti/pen/LYEpXQb'>CSS-in-JS</a> by Cesar Sapetti
   (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
+
+<sub>[Plantillas de cadena de texto con postprocesador](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/template_strings)</sub>
 
 _____
 
 ### Hojas de estilo CSS
 
-* Importamos los estilos directamente
-* Podemos importar una hoja de estilos en el raíz de la aplicación para aplicar a todos
+* Importamos el fichero CSS de estilos directamente
+* Se puede importar una hoja de estilos en el raíz de la aplicación para aplicar a todos
 
 ![](../images/import-css.png)
 
@@ -664,4 +805,56 @@ _____
   (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
+=====
+
+## Patrones de diseño
+
+### Higher Order Components
+
+* Función que recibe un componente y devuelve un nuevo componente
+* Se envuelve el componente que se recibe con una funcionalidad
+* Se usa en librerías como Redux o Relay
+
 _____
+
+<iframe height="650" style="width: 100%;" scrolling="no" title="HOC" src="https://codepen.io/sapetti/embed/ExaWxxg?height=650&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/sapetti/pen/ExaWxxg'>HOC</a> by Cesar Sapetti
+  (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+_____
+
+### Render Props
+
+* Un attributo que recibe una función que devuelve un elemento
+* El elemento con la Render Prop se encargará de llamar a la función
+* No se tiene porque llamar render, pero es algo común
+* Se usa en librerías como React Router
+
+_____
+
+<iframe height="600" style="width: 100%;" scrolling="no" title="Render Props" src="https://codepen.io/sapetti/embed/eYmVZzm?height=600&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/sapetti/pen/eYmVZzm'>Render Props</a> by Cesar Sapetti
+  (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+=====
+
+## Fragmentos
+
+
+
+
+* [Contexto](https://es.reactjs.org/docs/context.html)
+* Error boundaries
+* [Lazy/Suspense](https://es.reactjs.org/docs/code-splitting.html)
+* Portals
+* Hooks
+* PureComponent
+* React.memo
+* [React.lazy](https://es.reactjs.org/blog/2018/10/23/react-v-16-6.html#reactlazy-code-splitting-with-suspense)
+* [StrictMode](https://es.reactjs.org/docs/strict-mode.html)
+* Webpack – Conceptos básicos
+* create-react-app
+* Extensiones VS Code
+* [React Developer Tools](https://es.reactjs.org/docs/optimizing-performance.html#virtualize-long-lists)
