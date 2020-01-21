@@ -2,7 +2,7 @@
 
 =====
 
-## Agenda 
+## Agenda
 
 * React – Conceptos principales
 * [JSX](https://es.reactjs.org/docs/introducing-jsx.html)
@@ -26,11 +26,10 @@ _____
 * [Hooks](https://es.reactjs.org/docs/hooks-intro.html)
 * [PureComponent](https://es.reactjs.org/docs/react-api.html#reactpurecomponent)
 * [React.memo](https://es.reactjs.org/blog/2018/10/23/react-v-16-6.html#reactmemo)
-* [React.lazy](https://es.reactjs.org/blog/2018/10/23/react-v-16-6.html#reactlazy-code-splitting-with-suspense)
+* [StrictMode](https://es.reactjs.org/docs/strict-mode.html)
 
 _____
 
-* [StrictMode](https://es.reactjs.org/docs/strict-mode.html)
 * [Webpack](https://webpack.js.org/) – Conceptos básicos
 * create-react-app
 * Extensiones VS Code
@@ -50,31 +49,6 @@ _____
   * Logging
   * Mocking
   * Test
-
-=====
-
-Ideas
-
-* Rest/Spread props
-* Loops
-* Ref
-* sobreescribir estilos
-* Extensiones VS Code
-  * sublime-babel-vscode
-* Preguntar quien conoce NodeJS, NPM, NPX, React, ES6, Babel y Webpack
-* Create-react-app zero configuration
-* Synthesize events
-* npx create-react-app my-app
-* chiste tutorial code tutorial code
-* Flux -> Redux
-* Redux imagenes
-* Redux boilerplate
-* Single source of truth - un unico estado
-* State es solo lectura - unidirectional data-flow
-* Changes performed with pure functions, avoids non-deterministic events
-* Redux lifecycle - imagenes 
-* https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Operadores/Sintaxis_Spread
-* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters
 
 =====
 
@@ -1141,15 +1115,21 @@ Desde CodeSandbox crear una app para buscar usuarios de [GitHub](https://api.git
 
 * PureComponent
 * React.memo
-* [React.lazy](https://es.reactjs.org/blog/2018/10/23/react-v-16-6.html#reactlazy-code-splitting-with-suspense)
 * [StrictMode](https://es.reactjs.org/docs/strict-mode.html)
+* Extensiones VS Code
+  * sublime-babel-vscode
 * Node y NPM
 * Webpack – Conceptos básicos
 * create-react-app
+  * zero configuration
 * Extensiones VS Code
 * [React Developer Tools](https://es.reactjs.org/docs/optimizing-performance.html#virtualize-long-lists)
 * Redux – Conceptos básicos
   * Redux Developer Tools
+  * Redux lifecycle - imagenes
+  * Single source of truth - un unico estado
+  * State es solo lectura - unidirectional data-flow
+  * Changes performed with pure functions, avoids non-deterministic events
 * Otras librerías
   * [React Router](https://reacttraining.com/react-router/) - Amiga Framework
   * GraphQL - Apollo
@@ -1178,6 +1158,8 @@ Desde CodeSandbox crear una app para buscar usuarios de [GitHub](https://api.git
 * [Módulos de JavaScript](https://dev.to/iggredible/what-the-heck-are-cjs-amd-umd-and-esm-ikm)
 * [The many jobs of JS build tools](https://www.swyx.io/writing/jobs-of-js-build-tools)
 * [Overreacted](https://overreacted.io/)
+* [Egghead](https://egghead.io/)
+* [Scotch](https://scotch.io/)
 
 =====
 
@@ -1189,31 +1171,3 @@ Desde CodeSandbox crear una app para buscar usuarios de [GitHub](https://api.git
   * [@sebmck](https://twitter.com/sebmck?lang=es)
 * JS
   * [@addyosmani](https://twitter.com/addyosmani?lang=es)
-
-=====
-
-### Glosario
-
-Término | Definición
------------- | -------------
-Node | Entorno de ejecución JavaScript del lado del servidor. Similar a JRE. Usa el motor V8 de Chrome.
-npm | Gestor de paquetes de Node. Similar a Maven. Herramienta de línea de comandos que descarga las dependencias del repositorio de NPM basandose en el package.json. También puede lanzar scripts basandose en el mismo fichero.
-nvm | Gestor de versiones de Node. Permite cambiar entre versiones de Node. Similar a SDK Manager.
-package.json | Fichero de configuración de un proyecto de NPM. Similar al pom.xml. Define entre otras cosas las dependencias y los scripts de ejecución del proyecto.
-Dev Dependencies | Dependencías que solo se necesitan al lanzarse el proyecto en local o por parte de herramientas que se usand durante la generación del bundle.
-CommonJS | Definición del formato de los módulos para NodeJS. Se para aplicaciones del servidor.
-AMD | API de JavaScript para definir módulos cuyas dependencias son cargadas asincronamente. Se usa/usaba para aplicaciones web.
-ESM | Propuesta estandar para los modulos ES.
-Bundle | Fichero que se genera a partir de los módulos usando herramientas como Webpack.
-Webpack | Herramienta para generar el bundle a partir de los módulos del código. Hay otros como Browserify, Rollup o Parcel.
-Babel | Herramienta para transpilar versiones modernas de JavaScript a que puedan usar la mayoría de navegadores. Hay otros como Traceur.
-ECMAScript | Especificación del lenguaje JavaScript. Distintas versiones: ES5, ES6/ES2015, ES7/ES2016, ES8/ES2017, ES9/ES2018, ES10/ES2019...
-Prettier | Herramienta para formatear automaticamente el código al guardar.
-Linter | Herramienta de analisis de codigo a partir de unas reglas. Se puede configurar VS Code para que nos muestre esos errores. Algunos de los errores los soluciona automaticamente al guardar el fichero. ESLint
-npx | Herramienta para la ejecución de paquete de Node sin tener que instalarlo previamente. No será necesario instalar los paquetes globalmente. Usará siempre la última versión.
-Yarn | Una alternativa a npm de Facebook. Se diferencia de npm en la manera de guardar las dependencias en disco.
-Polyfill | Fragmento de código que se usa para proporcionar una funcionalidad que no existe en el navegador.
-SSR | Server Side Rendering.
-Next.js | Framework que permite crear vistas desde el servidor (SSR) basado en React, Webpack y Babel. Permite también trabajar con CSS directamente en ficheros JS.
-Jest | Framework para ejecutar test. Otro framework de test bastante comun es Mocha
-Enzyme | Librería para realizar test de React
