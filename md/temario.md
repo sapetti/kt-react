@@ -1,5 +1,7 @@
 # React
 
+![](../images/logo192.png)
+
 =====
 
 ## Agenda
