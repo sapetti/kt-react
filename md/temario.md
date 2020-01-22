@@ -9,15 +9,16 @@
 * [Renderizado de elementos](https://es.reactjs.org/docs/rendering-elements.html)
 * Componentes y tipos de componente
 * Props
+* Eventos
 * [State](https://es.reactjs.org/docs/react-component.html#setstate)
 * [Ciclo de vida de los componentes](https://es.reactjs.org/docs/react-component.html#the-component-lifecycle)
 * Children
-* Eventos
 * Estilos
 
 _____
 
 * Patrones de diseño
+* [Ref](https://es.reactjs.org/docs/refs-and-the-dom.html)
 * [Fragmentos](https://es.reactjs.org/docs/fragments.html)
 * [Contexto](https://es.reactjs.org/docs/context.html)
 * [Error boundaries](https://es.reactjs.org/docs/error-boundaries.html)
@@ -30,6 +31,8 @@ _____
 
 _____
 
+* node/npm/npx
+* Módulos
 * [Webpack](https://webpack.js.org/) – Conceptos básicos
 * create-react-app
 * Extensiones VS Code
@@ -160,6 +163,8 @@ const world = 'Mundo'
 <p>{ 'Hola ' + world }</p> // <p><%= 'Hola ' + world %></p>
 <p>{ `Hola ${world}` }</p>
 </code></pre>
+
+[ES6: Template Strings](https://codepen.io/sapetti/pen/KKwbyWm)
 
 _____
 
@@ -392,6 +397,12 @@ Hello.propTypes = {
 
 _____
 
+El mensaje de error solo se muestra en **modo desarrollo**
+
+![](../images/prop-types.png)
+
+_____
+
 ## Default Props
 
 <pre><code data-trim class="hljs">
@@ -488,26 +499,8 @@ _____
 ### Práctica: Eventos
 
 1. Crear una App que tenga un textbox
-2. Añadirle un handler que se lance cuando se escriba en el textbox
-3. El handler debe mostrar el texto que se esta escribiendo en la consola
-
-=====
-
-## Ref
-
-Es una forma de acceder a los nodos del DOM o a elementos creados en el metodo de renderizado
-
-* Controlar el foco
-* Selección de texto
-* Reproducción de medios
-* Inputs de tipo file
-
-_____
-
-<iframe height="600" style="width: 100%;" scrolling="no" title="Refs" src="https://codepen.io/sapetti/embed/preview/OJPQPXm?height=600&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href='https://codepen.io/sapetti/pen/OJPQPXm'>Refs</a> by Cesar Sapetti
-  (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
+2. Añadirle un handler que se ejecute cuando se escriba en el textbox
+3. El handler mostrará por consola el texto que se esta escribiendo
 
 =====
 
@@ -898,6 +891,24 @@ _____
 
 =====
 
+## Ref
+
+Es una forma de acceder a los nodos del DOM o a elementos creados en el metodo de renderizado
+
+* Controlar el foco
+* Selección de texto
+* Reproducción de medios
+* Inputs de tipo file
+
+_____
+
+<iframe height="600" style="width: 100%;" scrolling="no" title="Refs" src="https://codepen.io/sapetti/embed/preview/OJPQPXm?height=600&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/sapetti/pen/OJPQPXm'>Refs</a> by Cesar Sapetti
+  (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+=====
+
 ## Fragmentos
 
 * Al inspeccionar la mayoria de aplicaciones React resultaba en muchos divs debido wrapping que se hacia de los elementos
@@ -1074,10 +1085,6 @@ _____
 
 _____
 
-### useState
-
-_____
-
 ### [Reglas](https://es.reactjs.org/docs/hooks-overview.html#%EF%B8%8F-reglas-de-hooks-%EF%B8%8Frules-of-hooks)
 
 * No se pueden usar en clases
@@ -1098,7 +1105,25 @@ _____
 
 _____
 
+### useState
+
+<iframe height="600" style="width: 100%;" scrolling="no" title="Hooks - useState" src="https://codepen.io/sapetti/embed/preview/vYEVNWy?height=600&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/sapetti/pen/vYEVNWy'>Hooks - useState</a> by Cesar Sapetti
+  (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+_____
+
 ### useEffect
+
+* Sustituye a componentDidMount, componentDidUpdate y componentWillUnmount
+
+_____
+
+### useContext
+
+_____
+
+### useRef
 
 _____
 
@@ -1118,7 +1143,8 @@ Desde CodeSandbox crear una app para buscar usuarios de [GitHub](https://api.git
 * [StrictMode](https://es.reactjs.org/docs/strict-mode.html)
 * Extensiones VS Code
   * sublime-babel-vscode
-* Node y NPM
+* node/npm/npx
+* Módulos
 * Webpack – Conceptos básicos
 * create-react-app
   * zero configuration
