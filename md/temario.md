@@ -293,20 +293,20 @@ _____
 
 ### Práctica: Primer componente de función
 
-1. Modificar el ejemplo anterior creando un componente de función que devuelva un h1 con un Hola Mundo
+1. Modificar el ejercicio anterior creando un componente de función que devuelva un h1 con un Hola Mundo
 2. Cambiar en la llamada al render para usar el componente usando JSX
 
 _____
 
 ### Práctica: Primer componente de función flecha
 
-1. Modificar el ejemplo para usar una función flecha
+1. Modificar el ejercicio para usar una función flecha
 
 _____
 
 ### Práctica: Primer componente de clase
 
-1. Modificar el ejemplo para usar una clase. No olvidar el método render
+1. Modificar el ejercicio para usar una clase. No olvidar el método render
 
 =====
 
@@ -439,7 +439,7 @@ _____
 
 ### Práctica: Crear un componente que reciba propiedades
 
-1. Modificar el ejemplo anterior para que el componente en vez de mostrar Hola Mundo, muestre Hola y el nombre y apellido que se pase como props
+1. Modificar el ejercicio anterior para que el componente en vez de mostrar Hola Mundo, muestre Hola y el nombre y apellido que se pase como props
 2. Establecer que las propiedades nombre y apellido sean de tipo String
 3. Establecer que nombre sea obligatorio
 4. Asignarle un valor por defecto al apellido
@@ -608,7 +608,7 @@ _____
 
 ### Práctica: Estado
 
-1. Modificar el ejemplo anterior para almacenar el texto en el estado
+1. Modificar el ejercicio anterior para almacenar el texto en el estado
 2. Añadir una label donde se muestre este estado
 
 =====
@@ -845,18 +845,29 @@ _____
 
 =====
 
-## Práctica
+### Práctica
 
-Desde CodePen crear una app para buscar usuarios de [GitHub](https://api.github.com/search/users?q=sapetti)
+Crear una app para buscar usuarios de [GitHub](https://api.github.com/search/users?q=sapetti) usando:
 
-* Debe haber un input para introducir el nombre que queremos buscar
-* La busqueda solo se lanzará una vez se hayan introducido 3 caracteres
-* El resultado debe guardarse en el estado del componente
-* El resultado de la busqueda se mostrará en una tabla
-  * Login como link a la cuenta del usuario
+* Estado de componentes
+* Promesas de ES6
+* API de fetch
+* [Debounce](https://davidwalsh.name/javascript-debounce-function)
+
+_____
+
+* Añadir un input para introducir la busqueda
+* Buscar cuando se introduzcan 3 caracteres
+* Guardar el resultado en el estado
+* Mostrar el resultado en una tabla
   * Avatar como imagen
+  * Login como link a la cuenta del usuario
   * Link a sus repos
 * Se debe aplicar algún estilo a la tabla (color de la fuente, bordes...)
+
+_____
+
+
 
 =====
 
