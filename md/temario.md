@@ -847,12 +847,12 @@ _____
 
 ### Práctica
 
-Crear una app para buscar usuarios de [GitHub](https://api.github.com/search/users?q=sapetti) usando:
+Crear una app para buscar usuarios de [GitHub](https://api.github.com/search/users?q=${sapetti}) usando:
 
 * Estado de componentes
 * Promesas de ES6
 * API de fetch
-* [Debounce](https://davidwalsh.name/javascript-debounce-function)
+* [Debounce](https://stackoverflow.com/a/35228455)
 
 _____
 
@@ -867,7 +867,13 @@ _____
 
 _____
 
-
+<iframe
+     src="https://codesandbox.io/embed/great-sky-pgztn?fontsize=14&hidenavigation=1&theme=dark"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="great-sky-pgztn"
+     allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb"
+     sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
+   ></iframe>
 
 =====
 
@@ -1071,7 +1077,7 @@ _____
 
 ## Práctica: lazy/Suspense, Context, ErrorBoundary...
 
-Desde CodeSandbox crear una app para buscar usuarios de [GitHub](https://api.github.com/search/users?q=sapetti)
+Desde CodeSandbox crear una app para buscar usuarios de [GitHub](https://api.github.com/search/users?q=${sapetti})
 
 * Reusar el código de la practica anterior
 * Crear un componente tabla y cargarlo con lazy/Suspense
@@ -1142,7 +1148,7 @@ _____
 
 ### Practica: Hooks
 
-Desde CodeSandbox crear una app para buscar usuarios de [GitHub](https://api.github.com/search/users?q=sapetti) usando Hooks
+Desde CodeSandbox crear una app para buscar usuarios de [GitHub](https://api.github.com/search/users?q=${sapetti}) usando Hooks
 
 * Reusar el código de practicas anteriores
 * Crear un componente tabla y cargarlo con lazy/Suspense
