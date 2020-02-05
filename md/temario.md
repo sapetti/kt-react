@@ -849,10 +849,9 @@ _____
 
 Crear una app para buscar usuarios de [GitHub](https://api.github.com/search/users?q=${sapetti}) usando:
 
-* Estado de componentes
-* Promesas de ES6
-* API de fetch
-* [Debounce](https://stackoverflow.com/a/35228455)
+* [Promesas de ES6](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Promise)
+* [API de fetch](https://developer.mozilla.org/es/docs/Web/API/Fetch_API)
+* [Debounce para promesas](https://stackoverflow.com/a/54265129/6686114)
 
 _____
 
@@ -867,9 +866,16 @@ _____
 
 _____
 
+<iframe height="600" style="width: 100%;" scrolling="no" title="SearchUsers" src="https://codepen.io/sapetti/embed/preview/vYEMoEb?height=600&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/sapetti/pen/vYEMoEb'>SearchUsers</a> by Cesar Sapetti
+  (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+_____
+
 <iframe
      src="https://codesandbox.io/embed/great-sky-pgztn?fontsize=14&hidenavigation=1&theme=dark"
-     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     style="width:100%; height:600px; border:0; border-radius: 4px; overflow:hidden;"
      title="great-sky-pgztn"
      allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb"
      sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
@@ -931,7 +937,7 @@ _____
 ## Fragmentos
 
 * Al inspeccionar la mayoria de aplicaciones React resultaba en muchos divs debido wrapping que se hacia de los elementos
-* Permiten agrupar elementos sin agregar nodos al DO
+* Permiten agrupar elementos sin agregar nodos al DOM
 * Permiten sintaxis corta
 
 _____
@@ -988,19 +994,21 @@ Con la API de Contexto - Consumer
   (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
+Mejor cuando se usan varios contextos
+
 _____
 
 Con la API de Contexto - contextType
 
-<iframe height="550" style="width: 100%;" scrolling="no" title="With Context" src="https://codepen.io/sapetti/embed/preview/PowQVBy?height=550&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href='https://codepen.io/sapetti/pen/PowQVBy'>With Context</a> by Cesar Sapetti
+<iframe height="550" style="width: 100%;" scrolling="no" title="With Context contextType" src="https://codepen.io/sapetti/embed/preview/YzPeBmv?height=550&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/sapetti/pen/YzPeBmv'>With Context contextType</a> by Cesar Sapetti
   (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
 _____
 
 * Solo debe usarse para propiedades que deben ser repartidas por muchos componentes en distintas ramas del arbol
-* [Ojo con pasar objetos con el Contexto](https://reactjs.org/docs/context.html#caveats)
+* [Ojo con la forma de pasar objetos al Contexto](https://reactjs.org/docs/context.html#caveats)
 * contextType solo permite subscribirse a un único contexto, si se necesitan varios es mejor usar el Consumer
 * Si se necesitan pasar propiedades a través de varios niveles es mejor usar la [composición de objetos](https://reactjs.org/docs/context.html#before-you-use-context)
 
@@ -1023,31 +1031,57 @@ _____
 
 =====
 
-## Lazy/Suspense
+## ES6 Modules
 
-* Si solo se genera un bundle, este puede crecer demasiado y hacer que la aplicación tarde demasiado en cargar
-* Para solucionarlo se usa la tecnica **code spliting** usando __imports que hagan la carga dinamica del código__
-* El bundle se divide en uno principal y otro por cada uno de esos imports
+<iframe
+     src="https://codesandbox.io/embed/trusting-goldwasser-q04q3?fontsize=14&hidenavigation=1&theme=dark"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="trusting-goldwasser-q04q3"
+     allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb"
+     sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
+   ></iframe>
 
 _____
 
+* Los modulos nos servirán para crear el bundle (un fichero que tendrá todo lo necesario)
+* Un "único" &lt;script src="..." /&gt; por aplicación
+* El bundle puede crecer demasiado y hacer que la aplicación tarde demasiado en cargar
+
+_____
+
+## React.Lazy
+
+* Para solucionarlo se usa la tecnica **code spliting**
+* Se usan __imports que hagan la carga dinamica del código__
+* El bundle se divide en uno principal y otro por cada uno de esos imports
 * Normalmente estos imports se establecen a nivel de router, de modo que cada módulo tenga su propio bundle
-* Son los bundlers como Webpack quien se encargan de soportar import() y generarán los bundles que sean necesarios
+
+_____
+
+* Son los bundlers como Webpack quien se encargan de soportar import()
+* Generarán los bundles que sean necesarios
 * El import se traduce en una petición HTTP
 
 _____
 
-### ¿Que pasa mientras se carga es componente dinamicamente?
+### React.Suspense
 
-* En React incluye **lazy** y **Suspense** para gestionar esta situación
+* ¿Que pasa mientras se carga es componente dinamicamente?
+* **Suspense** mostrará el componente que indiquemos mientras se realiza la carga
+
+_____
+
 * Se usa React.lazy para renderizar import dinamicos
   * Nos deja escribir el código como si de un componente cualquiera
   * El import solo se lanzará una vez
   * Debe recibir una funcion que importa el componente
   * Solo valido para importar componentes
+
+_____
+
 * React.Suspense muestra un componente por defecto mientras se realizar la carga
   * Suspense recibe un elemento de React
-  * Se pueden usar varior componentes "lazy" dentro de un único suspense
+  * Se pueden usar varios componentes "lazy" dentro de un único suspense
 
 _____
 
@@ -1075,14 +1109,15 @@ _____
 
 =====
 
-## Práctica: lazy/Suspense, Context, ErrorBoundary...
+## Práctica
 
-Desde CodeSandbox crear una app para buscar usuarios de [GitHub](https://api.github.com/search/users?q=${sapetti})
+Crear una app para buscar usuarios de [GitHub](https://api.github.com/search/users?q=${sapetti})
 
 * Reusar el código de la practica anterior
+* Usar fragmentos con algún componente
 * Crear un componente tabla y cargarlo con lazy/Suspense
+* La tabla debe tener encima un contador de filas y ambos deben formar parte del mismo componente.
 * Usar la API de Contexto para pasar el color de fondo de las filas
-* Si no existe ningún resultado para ese usuario usar un Error Boundary para mostrar un mensaje
 
 =====
 
@@ -1130,30 +1165,105 @@ _____
   See the Pen <a href='https://codepen.io/sapetti/pen/vYEVNWy'>Hooks - useState</a> by Cesar Sapetti
   (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
+
+_____
+
+Se recomienda que existán varios useState en vez de tener uno solo que englobe todo
+
+<iframe height="500" style="width: 100%;" scrolling="no" title="Hooks - fetchUsers" src="https://codepen.io/sapetti/embed/preview/jOEXBmv?height=500&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/sapetti/pen/jOEXBmv'>Hooks - fetchUsers</a> by Cesar Sapetti
+  (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
 _____
 
 ### useEffect
 
-* Sustituye a componentDidMount, componentDidUpdate y componentWillUnmount
+Sustituye a componentDidMount, componentDidUpdate y componentWillUnmount
+
+<iframe height="400" style="width: 100%;" scrolling="no" title="Hooks - useEffect" src="https://codepen.io/sapetti/embed/preview/zYxgeyM?height=400&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/sapetti/pen/zYxgeyM'>Hooks - useEffect</a> by Cesar Sapetti
+  (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+_____
+
+Si nos subscribimos a algún servicio deberemos dar de baja esa subscripción al desmontar el componente
+
+<iframe height="450" style="width: 100%;" scrolling="no" title="Hooks - useEffect - Unsubscribe service" src="https://codepen.io/sapetti/embed/preview/ExaqMyz?height=450&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/sapetti/pen/ExaqMyz'>Hooks - useEffect - Unsubscribe service</a> by Cesar Sapetti
+  (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+_____
+
+useEffect se lanzará cada vez que se haga un renderizado, para evitarlo hay que añadirle una lista vacía
+
+<iframe height="450" style="width: 100%;" scrolling="no" title="Hooks - useEffect - Subscribe once" src="https://codepen.io/sapetti/embed/preview/eYNOZyy?height=450&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/sapetti/pen/eYNOZyy'>Hooks - useEffect - Subscribe once</a> by Cesar Sapetti
+  (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+_____
+
+Para lanzarlo cada vez que el estado cambie, incluiremos en la lista los valores a "vigilar"
+
+<iframe height="450" style="width: 100%;" scrolling="no" title="Hooks - useEffect - Conditional render" src="https://codepen.io/sapetti/embed/preview/jOEgJNZ?height=450&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/sapetti/pen/jOEgJNZ'>Hooks - useEffect - Conditional render</a> by Cesar Sapetti
+  (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
 
 _____
 
 ### useContext
 
+<iframe height="600" style="width: 100%;" scrolling="no" title="Hooks - useContext" src="https://codepen.io/sapetti/embed/preview/MWwgjQa?height=600&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/sapetti/pen/MWwgjQa'>Hooks - useContext</a> by Cesar Sapetti
+  (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
 _____
 
 ### useRef
+
+<iframe height="600" style="width: 100%;" scrolling="no" title="Hooks - useRef" src="https://codepen.io/sapetti/embed/preview/PoqYzBO?height=600&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/sapetti/pen/PoqYzBO'>Hooks - useRef</a> by Cesar Sapetti
+  (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+_____
+
+### Hooks customizados
+
+Carga de recursos adaptados al dispositivo con [react-adaptive-hooks](https://github.com/GoogleChromeLabs/react-adaptive-hooks)
+
+_____
+
+### Crear tus propios Hooks
 
 _____
 
 ### Practica: Hooks
 
-Desde CodeSandbox crear una app para buscar usuarios de [GitHub](https://api.github.com/search/users?q=${sapetti}) usando Hooks
+Crear una app para buscar usuarios de [GitHub](https://api.github.com/search/users?q=${sapetti}) usando Hooks
 
 * Reusar el código de practicas anteriores
-* Crear un componente tabla y cargarlo con lazy/Suspense
-* Usar la API de Contexto para pasar el color de fondo de las filas
-* Si no existe ningún resultado para ese usuario usar un Error Boundary para mostrar un mensaje
+* Usar useState para almacenar el array de usuarios
+* Usar useEffect para lanzar la petición HTTP a la API cada vez que el nombre cambie
+
+_____
+
+<iframe height="600" style="width: 100%;" scrolling="no" title="Hooks - useEffect - fetchUsers" src="https://codepen.io/sapetti/embed/preview/BayXMrz?height=600&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/sapetti/pen/BayXMrz'>Hooks - useEffect - fetchUsers</a> by Cesar Sapetti
+  (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+_____
+
+<iframe height="600" style="width: 100%;" scrolling="no" title="Hooks - fetchUsers - customHooks" src="https://codepen.io/sapetti/embed/preview/JjdPKJj?height=600&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/sapetti/pen/JjdPKJj'>Hooks - fetchUsers - customHooks</a> by Cesar Sapetti
+  (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
 
 =====
 
