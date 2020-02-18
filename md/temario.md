@@ -1001,7 +1001,7 @@ _____
 
 Con la API de Contexto - contextType
 
-<iframe loading="lazy" height="550" style="width: 100%;" scrolling="no" title="With Context contextType" src="https://codepen.io/sapetti/embed/preview/YzPeBmv?height=550&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe loading="lazy" height="500" style="width: 100%;" scrolling="no" title="With Context contextType" src="https://codepen.io/sapetti/embed/preview/YzPeBmv?height=500&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/sapetti/pen/YzPeBmv'>With Context contextType</a> by Cesar Sapetti
   (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
@@ -1266,7 +1266,33 @@ _____
 
 =====
 
-* PureComponent
+## PureComponent
+
+* Se usa como tecnica de optimización
+* Implementa shouldComponentUpdate
+* Hace una comparación shallow para comprobar el estado y las props
+* Si no han cambiado, no se re-renderiza
+
+_____
+
+Cada vez que el estado cambia, los hijos se re-renderizan
+
+<iframe height="500" style="width: 100%;" scrolling="no" title="Without PureComponent" src="https://codepen.io/sapetti/embed/preview/MWweEZz?height=500&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/sapetti/pen/MWweEZz'>Without PureComponent</a> by Cesar Sapetti
+  (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+_____
+
+Ahora solo se re-renderiza cuando cambian las props o su estado
+
+<iframe height="500" style="width: 100%;" scrolling="no" title="With PureComponent" src="https://codepen.io/sapetti/embed/preview/KKpMZOm?height=500&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/sapetti/pen/KKpMZOm'>With PureComponent</a> by Cesar Sapetti
+  (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+=====
+
 * React.memo
 * [StrictMode](https://es.reactjs.org/docs/strict-mode.html)
 * Extensiones VS Code
