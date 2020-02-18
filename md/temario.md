@@ -74,7 +74,7 @@ _____
 
 _____
 
-<iframe height="600" style="width: 100%;" scrolling="no" title="Tick" src="https://codepen.io/sapetti/embed/preview/dyPozxB?height=600&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe loading="lazy" height="600" style="width: 100%;" scrolling="no" title="Tick" src="https://codepen.io/sapetti/embed/preview/dyPozxB?height=600&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/sapetti/pen/dyPozxB'>Tick</a> by Cesar Sapetti
   (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
@@ -228,7 +228,7 @@ _____
 
 _____
 
-<iframe height="600" style="width: 100%;" scrolling="no" title="HelloWorld" src="https://codepen.io/sapetti/embed/preview/PowqjJd?height=600&theme-id=default&default-tab=html,result&font-size=20px" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe loading="lazy" height="600" style="width: 100%;" scrolling="no" title="HelloWorld" src="https://codepen.io/sapetti/embed/preview/PowqjJd?height=600&theme-id=default&default-tab=html,result&font-size=20px" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/sapetti/pen/PowqjJd'>HelloWorld</a> by Cesar Sapetti
   (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
@@ -284,7 +284,7 @@ En el caso de los componentes usamos JSX
 ReactDOM.render(&lt;Hello /&gt;, document.getElementById('root'))
 </code></pre>
 
-<iframe height="350" style="width: 100%;" scrolling="no" title="Hello Component" src="https://codepen.io/sapetti/embed/preview/KKwpXVZ?height=350&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe loading="lazy" height="350" style="width: 100%;" scrolling="no" title="Hello Component" src="https://codepen.io/sapetti/embed/preview/KKwpXVZ?height=350&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/sapetti/pen/KKwpXVZ'>Hello Component</a> by Cesar Sapetti
   (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
@@ -325,7 +325,7 @@ function Hello(props) {
 }
 </code></pre>
 
-<iframe height="400" style="width: 100%;" scrolling="no" title="Props" src="https://codepen.io/sapetti/embed/preview/zYxGaNy?height=400&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe loading="lazy" height="400" style="width: 100%;" scrolling="no" title="Props" src="https://codepen.io/sapetti/embed/preview/zYxGaNy?height=400&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/sapetti/pen/zYxGaNy'>Props</a> by Cesar Sapetti
   (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
@@ -342,7 +342,7 @@ class Hello extends React.Component {
 }
 </code></pre>
 
-<iframe height="400" style="width: 100%;" scrolling="no" title="Props Class" src="https://codepen.io/sapetti/embed/preview/eYmNKWP?height=400&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe loading="lazy" height="400" style="width: 100%;" scrolling="no" title="Props Class" src="https://codepen.io/sapetti/embed/preview/eYmNKWP?height=400&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/sapetti/pen/eYmNKWP'>Props Class</a> by Cesar Sapetti
   (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
@@ -446,7 +446,7 @@ _____
 
 _____
 
-<iframe height="600" style="width: 100%;" scrolling="no" title="PropTypes" src="https://codepen.io/sapetti/embed/preview/JjoLJGr?height=600&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe loading="lazy" height="600" style="width: 100%;" scrolling="no" title="PropTypes" src="https://codepen.io/sapetti/embed/preview/JjoLJGr?height=600&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/sapetti/pen/JjoLJGr'>PropTypes</a> by Cesar Sapetti
   (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
@@ -467,7 +467,7 @@ _____
 
 #### Definición de handlers - Funciones flecha
 
-<iframe height="400" style="width: 100%;" scrolling="no" title="Events - Arrow Functions" src="https://codepen.io/sapetti/embed/preview/WNbrpEV?height=400&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe loading="lazy" height="400" style="width: 100%;" scrolling="no" title="Events - Arrow Functions" src="https://codepen.io/sapetti/embed/preview/WNbrpEV?height=400&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/sapetti/pen/WNbrpEV'>Events - Arrow Functions</a> by Cesar Sapetti
   (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
@@ -478,7 +478,7 @@ _____
 
 #### Definición de handlers - Bind
 
-<iframe height="400" style="width: 100%;" scrolling="no" title="Events - Bind" src="https://codepen.io/sapetti/embed/preview/LYEGLPP?height=400&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe loading="lazy" height="400" style="width: 100%;" scrolling="no" title="Events - Bind" src="https://codepen.io/sapetti/embed/preview/LYEGLPP?height=400&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/sapetti/pen/LYEGLPP'>Events - Bind</a> by Cesar Sapetti
   (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
@@ -489,7 +489,7 @@ _____
 
 #### Definición de handlers - Campos públicos de clases
 
-<iframe height="400" style="width: 100%;" scrolling="no" title="Events - Public field" src="https://codepen.io/sapetti/embed/preview/bGNERGo?height=400&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe loading="lazy" height="400" style="width: 100%;" scrolling="no" title="Events - Public field" src="https://codepen.io/sapetti/embed/preview/bGNERGo?height=400&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/sapetti/pen/bGNERGo'>Events - Public field</a> by Cesar Sapetti
   (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
@@ -526,7 +526,7 @@ _____
 
 _____
 
-<iframe height="550" style="width: 100%;" scrolling="no" title="Props Class" src="https://codepen.io/sapetti/embed/preview/oNgXPZM?height=550&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe loading="lazy" height="550" style="width: 100%;" scrolling="no" title="Props Class" src="https://codepen.io/sapetti/embed/preview/oNgXPZM?height=550&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/sapetti/pen/oNgXPZM'>Props Class</a> by Cesar Sapetti
   (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
@@ -535,7 +535,7 @@ _____
 
 Cada componente tiene su propio estado
 
-<iframe height="550" style="width: 100%;" scrolling="no" title="First State Component" src="https://codepen.io/sapetti/embed/preview/RwNPYjO?height=550&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe loading="lazy" height="550" style="width: 100%;" scrolling="no" title="First State Component" src="https://codepen.io/sapetti/embed/preview/RwNPYjO?height=550&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/sapetti/pen/RwNPYjO'>First State Component</a> by Cesar Sapetti
   (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
@@ -560,7 +560,7 @@ this.state.counter // 1
 
 _____
 
-<iframe height="650" style="width: 100%;" scrolling="no" title="setState is async" src="https://codepen.io/sapetti/embed/preview/povJOLe?height=650&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe loading="lazy" height="650" style="width: 100%;" scrolling="no" title="setState is async" src="https://codepen.io/sapetti/embed/preview/povJOLe?height=650&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/sapetti/pen/povJOLe'>setState is async</a> by Cesar Sapetti
   (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
@@ -577,7 +577,7 @@ this.setState((state, props) => {
 
 _____
 
-<iframe height="650" style="width: 100%;" scrolling="no" title="setState is async" src="https://codepen.io/sapetti/embed/preview/rNaVqgE?height=650&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe loading="lazy" height="650" style="width: 100%;" scrolling="no" title="setState is async" src="https://codepen.io/sapetti/embed/preview/rNaVqgE?height=650&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/sapetti/pen/rNaVqgE'>setState is async</a> by Cesar Sapetti
   (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
@@ -599,7 +599,7 @@ this.setState({ user: 'Skyler' })
 _____
 
 Ojo con los objetos
-<iframe height="600" style="width: 100%;" scrolling="no" title="setState shallow merge" src="https://codepen.io/sapetti/embed/preview/BayNGar?height=600&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe loading="lazy" height="600" style="width: 100%;" scrolling="no" title="setState shallow merge" src="https://codepen.io/sapetti/embed/preview/BayNGar?height=600&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/sapetti/pen/BayNGar'>setState shallow merge</a> by Cesar Sapetti
   (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
@@ -622,7 +622,7 @@ _____
 
 ### Componentes controlados
 
-<iframe height="600" style="width: 100%;" scrolling="no" title="Controlado" src="https://codepen.io/sapetti/embed/preview/qBExEMb?height=600&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe loading="lazy" height="600" style="width: 100%;" scrolling="no" title="Controlado" src="https://codepen.io/sapetti/embed/preview/qBExEMb?height=600&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/sapetti/pen/qBExEMb'>Controlado</a> by Cesar Sapetti
   (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
@@ -631,7 +631,7 @@ _____
 
 ### Componentes no controlados
 
-<iframe height="600" style="width: 100% !important;" scrolling="no" title="No Controlado" src="https://codepen.io/sapetti/embed/preview/VwYQevY?height=600&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe loading="lazy" height="600" style="width: 100% !important;" scrolling="no" title="No Controlado" src="https://codepen.io/sapetti/embed/preview/VwYQevY?height=600&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/sapetti/pen/VwYQevY'>No Controlado</a> by Cesar Sapetti
   (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
@@ -671,7 +671,7 @@ _____
 
 _____
 
-<iframe height="600" style="width: 100%;" scrolling="no" title="Component lifecycle" src="https://codepen.io/sapetti/embed/preview/GRgJPOb?height=600&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe loading="lazy" height="600" style="width: 100%;" scrolling="no" title="Component lifecycle" src="https://codepen.io/sapetti/embed/preview/GRgJPOb?height=600&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/sapetti/pen/GRgJPOb'>Component lifecycle</a> by Cesar Sapetti
   (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
@@ -719,7 +719,7 @@ _____
 
 _____
 
-<iframe height="600" style="width: 100%;" scrolling="no" title="props.children" src="https://codepen.io/sapetti/embed/preview/KKwdrrL?height=600&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe loading="lazy" height="600" style="width: 100%;" scrolling="no" title="props.children" src="https://codepen.io/sapetti/embed/preview/KKwdrrL?height=600&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/sapetti/pen/KKwdrrL'>props.children</a> by Cesar Sapetti
   (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
@@ -733,7 +733,7 @@ _____
 
 Un unico hijo no funciona en este ejemplo
 
-<iframe height="600" style="width: 100%;" scrolling="no" title="props.children fail!" src="https://codepen.io/sapetti/embed/preview/bGNVQZO?height=600&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe loading="lazy" height="600" style="width: 100%;" scrolling="no" title="props.children fail!" src="https://codepen.io/sapetti/embed/preview/bGNVQZO?height=600&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/sapetti/pen/bGNVQZO'>props.children fail!</a> by Cesar Sapetti
   (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
@@ -742,7 +742,7 @@ _____
 
 React.Children
 
-<iframe height="600" style="width: 150%;" scrolling="no" title="React.Children" src="https://codepen.io/sapetti/embed/preview/NWPxdxX?height=600&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe loading="lazy" height="600" style="width: 150%;" scrolling="no" title="React.Children" src="https://codepen.io/sapetti/embed/preview/NWPxdxX?height=600&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/sapetti/pen/NWPxdxX'>React.Children</a> by Cesar Sapetti
   (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
@@ -775,7 +775,7 @@ _____
 
 _____
 
-<iframe height="600" style="width: 100%;" scrolling="no" title="Inline style" src="https://codepen.io/sapetti/embed/preview/povjOme?height=600&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe loading="lazy" height="600" style="width: 100%;" scrolling="no" title="Inline style" src="https://codepen.io/sapetti/embed/preview/povjOme?height=600&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/sapetti/pen/povjOme'>Inline style</a> by Cesar Sapetti
   (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
@@ -784,7 +784,7 @@ _____
 
 Podemos extraer los estilos a un objeto
 
-<iframe height="500" style="width: 100%;" scrolling="no" title="Inline style object" src="https://codepen.io/sapetti/embed/preview/yLyYRaz?height=500&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe loading="lazy" height="500" style="width: 100%;" scrolling="no" title="Inline style object" src="https://codepen.io/sapetti/embed/preview/yLyYRaz?height=500&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/sapetti/pen/yLyYRaz'>Inline style object</a> by Cesar Sapetti
   (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
@@ -803,7 +803,7 @@ _____
 
 #### styled-components
 
-<iframe height="500" style="width: 100%;" scrolling="no" title="CSS-in-JS" src="https://codepen.io/sapetti/embed/preview/LYEpXQb?height=500&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe loading="lazy" height="500" style="width: 100%;" scrolling="no" title="CSS-in-JS" src="https://codepen.io/sapetti/embed/preview/LYEpXQb?height=500&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/sapetti/pen/LYEpXQb'>CSS-in-JS</a> by Cesar Sapetti
   (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
@@ -838,7 +838,7 @@ _____
 
 _____
 
-<iframe height="600" style="width: 100%;" scrolling="no" title="className" src="https://codepen.io/sapetti/embed/preview/oNgjaor?height=600&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe loading="lazy" height="600" style="width: 100%;" scrolling="no" title="className" src="https://codepen.io/sapetti/embed/preview/oNgjaor?height=600&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/sapetti/pen/oNgjaor'>className</a> by Cesar Sapetti
   (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
@@ -866,7 +866,7 @@ _____
 
 _____
 
-<iframe height="600" style="width: 100%;" scrolling="no" title="SearchUsers" src="https://codepen.io/sapetti/embed/preview/vYEMoEb?height=600&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe loading="lazy" height="600" style="width: 100%;" scrolling="no" title="SearchUsers" src="https://codepen.io/sapetti/embed/preview/vYEMoEb?height=600&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/sapetti/pen/vYEMoEb'>SearchUsers</a> by Cesar Sapetti
   (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
@@ -894,7 +894,7 @@ _____
 
 _____
 
-<iframe height="650" style="width: 100%;" scrolling="no" title="HOC" src="https://codepen.io/sapetti/embed/preview/ExaWxxg?height=650&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe loading="lazy" height="650" style="width: 100%;" scrolling="no" title="HOC" src="https://codepen.io/sapetti/embed/preview/ExaWxxg?height=650&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/sapetti/pen/ExaWxxg'>HOC</a> by Cesar Sapetti
   (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
@@ -910,7 +910,7 @@ _____
 
 _____
 
-<iframe height="600" style="width: 100%;" scrolling="no" title="Render Props" src="https://codepen.io/sapetti/embed/preview/eYmVZzm?height=600&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe loading="lazy" height="600" style="width: 100%;" scrolling="no" title="Render Props" src="https://codepen.io/sapetti/embed/preview/eYmVZzm?height=600&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/sapetti/pen/eYmVZzm'>Render Props</a> by Cesar Sapetti
   (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
@@ -928,7 +928,7 @@ Es una forma de acceder a los nodos del DOM o a elementos creados en el metodo d
 
 _____
 
-<iframe height="600" style="width: 100%;" scrolling="no" title="Refs" src="https://codepen.io/sapetti/embed/preview/OJPQPXm?height=600&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe loading="lazy" height="600" style="width: 100%;" scrolling="no" title="Refs" src="https://codepen.io/sapetti/embed/preview/OJPQPXm?height=600&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/sapetti/pen/OJPQPXm'>Refs</a> by Cesar Sapetti
   (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
@@ -945,7 +945,7 @@ _____
 
 Sin fragmentos
 
-<iframe height="600" style="width: 100%;" scrolling="no" title="Without Fragments" src="https://codepen.io/sapetti/embed/preview/ZEYrpJV?height=600&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe loading="lazy" height="600" style="width: 100%;" scrolling="no" title="Without Fragments" src="https://codepen.io/sapetti/embed/preview/ZEYrpJV?height=600&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/sapetti/pen/ZEYrpJV'>Without Fragments</a> by Cesar Sapetti
   (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
@@ -954,7 +954,7 @@ _____
 
 Con fragmentos
 
-<iframe height="600" style="width: 100%;" scrolling="no" title="With Fragments" src="https://codepen.io/sapetti/embed/preview/XWJZjYL?height=600&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe loading="lazy" height="600" style="width: 100%;" scrolling="no" title="With Fragments" src="https://codepen.io/sapetti/embed/preview/XWJZjYL?height=600&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/sapetti/pen/XWJZjYL'>With Fragments</a> by Cesar Sapetti
   (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
@@ -963,7 +963,7 @@ _____
 
 Con fragmentos sintaxis corta
 
-<iframe height="600" style="width: 100%;" scrolling="no" title="With Fragments Shorthand Syntax" src="https://codepen.io/sapetti/embed/preview/YzPeGOp?height=600&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe loading="lazy" height="600" style="width: 100%;" scrolling="no" title="With Fragments Shorthand Syntax" src="https://codepen.io/sapetti/embed/preview/YzPeGOp?height=600&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/sapetti/pen/YzPeGOp'>With Fragments Shorthand Syntax</a> by Cesar Sapetti
   (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
@@ -981,7 +981,7 @@ _____
 
 Sin la API de Contexto
 
-<iframe height="550" style="width: 100%;" scrolling="no" title="Without Context" src="https://codepen.io/sapetti/embed/preview/dyPdaOW?height=550&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe loading="lazy" height="550" style="width: 100%;" scrolling="no" title="Without Context" src="https://codepen.io/sapetti/embed/preview/dyPdaOW?height=550&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/sapetti/pen/dyPdaOW'>Without Context</a> by Cesar Sapetti
   (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
@@ -990,7 +990,7 @@ _____
 
 Con la API de Contexto - Consumer
 
-<iframe height="550" style="width: 100%;" scrolling="no" title="With Context" src="https://codepen.io/sapetti/embed/preview/PowQVBy?height=550&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe loading="lazy" height="550" style="width: 100%;" scrolling="no" title="With Context" src="https://codepen.io/sapetti/embed/preview/PowQVBy?height=550&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/sapetti/pen/PowQVBy'>With Context</a> by Cesar Sapetti
   (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
@@ -1001,7 +1001,7 @@ _____
 
 Con la API de Contexto - contextType
 
-<iframe height="550" style="width: 100%;" scrolling="no" title="With Context contextType" src="https://codepen.io/sapetti/embed/preview/YzPeBmv?height=550&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe loading="lazy" height="550" style="width: 100%;" scrolling="no" title="With Context contextType" src="https://codepen.io/sapetti/embed/preview/YzPeBmv?height=550&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/sapetti/pen/YzPeBmv'>With Context contextType</a> by Cesar Sapetti
   (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
@@ -1025,7 +1025,7 @@ Es un try/catch a modo de componente que permite:
 
 _____
 
-<iframe height="600" style="width: 100%;" scrolling="no" title="Error Boundaries" src="https://codepen.io/sapetti/embed/preview/povaYEb?height=600&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe loading="lazy" height="600" style="width: 100%;" scrolling="no" title="Error Boundaries" src="https://codepen.io/sapetti/embed/preview/povaYEb?height=600&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/sapetti/pen/povaYEb'>Error Boundaries</a> by Cesar Sapetti
   (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
@@ -1103,7 +1103,7 @@ _____
 
 _____
 
-<iframe height="600" style="width: 100%;" scrolling="no" title="Portals" src="https://codepen.io/sapetti/embed/preview/GRgYJoa?height=600&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe loading="lazy" height="600" style="width: 100%;" scrolling="no" title="Portals" src="https://codepen.io/sapetti/embed/preview/GRgYJoa?height=600&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/sapetti/pen/GRgYJoa'>Portals</a> by Cesar Sapetti
   (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
@@ -1162,7 +1162,7 @@ _____
 
 ### useState
 
-<iframe height="600" style="width: 100%;" scrolling="no" title="Hooks - useState" src="https://codepen.io/sapetti/embed/preview/vYEVNWy?height=600&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe loading="lazy" height="600" style="width: 100%;" scrolling="no" title="Hooks - useState" src="https://codepen.io/sapetti/embed/preview/vYEVNWy?height=600&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/sapetti/pen/vYEVNWy'>Hooks - useState</a> by Cesar Sapetti
   (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
@@ -1171,7 +1171,7 @@ _____
 
 Se recomienda que existán varios useState en vez de tener uno solo que englobe todo
 
-<iframe height="500" style="width: 100%;" scrolling="no" title="Hooks - fetchUsers" src="https://codepen.io/sapetti/embed/preview/jOEXBmv?height=500&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe loading="lazy" height="500" style="width: 100%;" scrolling="no" title="Hooks - fetchUsers" src="https://codepen.io/sapetti/embed/preview/jOEXBmv?height=500&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/sapetti/pen/jOEXBmv'>Hooks - fetchUsers</a> by Cesar Sapetti
   (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
@@ -1182,7 +1182,7 @@ _____
 
 Sustituye a componentDidMount, componentDidUpdate y componentWillUnmount
 
-<iframe height="400" style="width: 100%;" scrolling="no" title="Hooks - useEffect" src="https://codepen.io/sapetti/embed/preview/zYxgeyM?height=400&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe loading="lazy" height="400" style="width: 100%;" scrolling="no" title="Hooks - useEffect" src="https://codepen.io/sapetti/embed/preview/zYxgeyM?height=400&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/sapetti/pen/zYxgeyM'>Hooks - useEffect</a> by Cesar Sapetti
   (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
@@ -1191,7 +1191,7 @@ _____
 
 Si nos subscribimos a algún servicio deberemos dar de baja esa subscripción al desmontar el componente
 
-<iframe height="450" style="width: 100%;" scrolling="no" title="Hooks - useEffect - Unsubscribe service" src="https://codepen.io/sapetti/embed/preview/ExaqMyz?height=450&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe loading="lazy" height="450" style="width: 100%;" scrolling="no" title="Hooks - useEffect - Unsubscribe service" src="https://codepen.io/sapetti/embed/preview/ExaqMyz?height=450&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/sapetti/pen/ExaqMyz'>Hooks - useEffect - Unsubscribe service</a> by Cesar Sapetti
   (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
@@ -1200,7 +1200,7 @@ _____
 
 useEffect se lanzará cada vez que se haga un renderizado, para evitarlo hay que añadirle una lista vacía
 
-<iframe height="450" style="width: 100%;" scrolling="no" title="Hooks - useEffect - Subscribe once" src="https://codepen.io/sapetti/embed/preview/eYNOZyy?height=450&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe loading="lazy" height="450" style="width: 100%;" scrolling="no" title="Hooks - useEffect - Subscribe once" src="https://codepen.io/sapetti/embed/preview/eYNOZyy?height=450&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/sapetti/pen/eYNOZyy'>Hooks - useEffect - Subscribe once</a> by Cesar Sapetti
   (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
@@ -1209,7 +1209,7 @@ _____
 
 Para lanzarlo cada vez que el estado cambie, incluiremos en la lista los valores a "vigilar"
 
-<iframe height="450" style="width: 100%;" scrolling="no" title="Hooks - useEffect - Conditional render" src="https://codepen.io/sapetti/embed/preview/jOEgJNZ?height=450&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe loading="lazy" height="450" style="width: 100%;" scrolling="no" title="Hooks - useEffect - Conditional render" src="https://codepen.io/sapetti/embed/preview/jOEgJNZ?height=450&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/sapetti/pen/jOEgJNZ'>Hooks - useEffect - Conditional render</a> by Cesar Sapetti
   (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
@@ -1218,7 +1218,7 @@ _____
 
 ### useContext
 
-<iframe height="600" style="width: 100%;" scrolling="no" title="Hooks - useContext" src="https://codepen.io/sapetti/embed/preview/MWwgjQa?height=600&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe loading="lazy" height="600" style="width: 100%;" scrolling="no" title="Hooks - useContext" src="https://codepen.io/sapetti/embed/preview/MWwgjQa?height=600&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/sapetti/pen/MWwgjQa'>Hooks - useContext</a> by Cesar Sapetti
   (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
@@ -1227,7 +1227,7 @@ _____
 
 ### useRef
 
-<iframe height="600" style="width: 100%;" scrolling="no" title="Hooks - useRef" src="https://codepen.io/sapetti/embed/preview/PoqYzBO?height=600&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe loading="lazy" height="600" style="width: 100%;" scrolling="no" title="Hooks - useRef" src="https://codepen.io/sapetti/embed/preview/PoqYzBO?height=600&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/sapetti/pen/PoqYzBO'>Hooks - useRef</a> by Cesar Sapetti
   (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
@@ -1237,10 +1237,6 @@ _____
 ### Hooks customizados
 
 Carga de recursos adaptados al dispositivo con [react-adaptive-hooks](https://github.com/GoogleChromeLabs/react-adaptive-hooks)
-
-_____
-
-### Crear tus propios Hooks
 
 _____
 
@@ -1254,14 +1250,16 @@ Crear una app para buscar usuarios de [GitHub](https://api.github.com/search/use
 
 _____
 
-<iframe height="600" style="width: 100%;" scrolling="no" title="Hooks - useEffect - fetchUsers" src="https://codepen.io/sapetti/embed/preview/BayXMrz?height=600&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe loading="lazy" height="600" style="width: 100%;" scrolling="no" title="Hooks - useEffect - fetchUsers" src="https://codepen.io/sapetti/embed/preview/BayXMrz?height=600&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/sapetti/pen/BayXMrz'>Hooks - useEffect - fetchUsers</a> by Cesar Sapetti
   (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
 _____
 
-<iframe height="600" style="width: 100%;" scrolling="no" title="Hooks - fetchUsers - customHooks" src="https://codepen.io/sapetti/embed/preview/JjdPKJj?height=600&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+### Crear tus propios Hooks
+
+<iframe loading="lazy" height="600" style="width: 100%;" scrolling="no" title="Hooks - fetchUsers - customHooks" src="https://codepen.io/sapetti/embed/preview/JjdPKJj?height=600&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/sapetti/pen/JjdPKJj'>Hooks - fetchUsers - customHooks</a> by Cesar Sapetti
   (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
