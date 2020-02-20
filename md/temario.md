@@ -1291,6 +1291,10 @@ Ahora solo se re-renderiza cuando cambian las props o su estado
   (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
+_____
+
+[SO: Cuando debo usar PureComponent](https://stackoverflow.com/a/42756445/6686114)
+
 =====
 
 * React.memo
