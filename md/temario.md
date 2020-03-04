@@ -894,6 +894,12 @@ _____
 
 _____
 
+#### [react-redux](https://github.com/reduxjs/react-redux)
+
+![](../images/redux-connect.png)
+
+_____
+
 <iframe loading="lazy" height="650" style="width: 100%;" scrolling="no" title="HOC" src="https://codepen.io/sapetti/embed/preview/ExaWxxg?height=650&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/sapetti/pen/ExaWxxg'>HOC</a> by Cesar Sapetti
   (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
@@ -907,6 +913,12 @@ _____
 * El elemento con la Render Prop se encargará de llamar a la función
 * No se tiene porque llamar render, pero es algo común
 * Se usa en librerías como React Router
+
+_____
+
+#### [react-router](https://reacttraining.com/react-router/web/guides/quick-start)
+
+![](../images/react-router.png)
 
 _____
 
@@ -1120,6 +1132,16 @@ Crear una app para buscar usuarios de [GitHub](https://api.github.com/search/use
 * La tabla debe tener encima un contador de filas y ambos deben formar parte del mismo componente.
 * Usar la API de Contexto para pasar el color de fondo de las filas
 
+_____
+
+<iframe loading="lazy"
+     src="https://codesandbox.io/embed/happy-proskuriakova-i7219?fontsize=14&hidenavigation=1&theme=dark"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="happy-proskuriakova-i7219"
+     allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb"
+     sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
+   ></iframe>
+
 =====
 
 ## Hooks
@@ -1313,7 +1335,9 @@ _____
   * Redux lifecycle - imagenes
   * Single source of truth - un unico estado
   * State es solo lectura - unidirectional data-flow
-  * Changes performed with pure functions, avoids non-deterministic events
+  * Changes performed with pure functions, avoids non-deterministic eventsa
+  * https://egghead.io/courses/getting-started-with-redux
+  * https://egghead.io/courses/building-react-applications-with-idiomatic-redux
 * Otras librerías
   * [React Router](https://reacttraining.com/react-router/) - Amiga Framework
   * GraphQL - Apollo
