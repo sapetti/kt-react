@@ -1299,7 +1299,7 @@ _____
 
 Cada vez que el estado cambia, los hijos se re-renderizan
 
-<iframe height="500" style="width: 100%;" scrolling="no" title="Without PureComponent" src="https://codepen.io/sapetti/embed/preview/MWweEZz?height=500&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe lazy="loading" height="500" style="width: 100%;" scrolling="no" title="Without PureComponent" src="https://codepen.io/sapetti/embed/preview/MWweEZz?height=500&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/sapetti/pen/MWweEZz'>Without PureComponent</a> by Cesar Sapetti
   (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
@@ -1308,7 +1308,7 @@ _____
 
 Ahora solo se re-renderiza cuando cambian las props o su estado
 
-<iframe height="500" style="width: 100%;" scrolling="no" title="With PureComponent" src="https://codepen.io/sapetti/embed/preview/KKpMZOm?height=500&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe lazy="loading" height="500" style="width: 100%;" scrolling="no" title="With PureComponent" src="https://codepen.io/sapetti/embed/preview/KKpMZOm?height=500&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/sapetti/pen/KKpMZOm'>With PureComponent</a> by Cesar Sapetti
   (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
@@ -1319,7 +1319,36 @@ _____
 
 =====
 
-* React.memo
+## React.memo
+
+* Similar a React.PureComponent pero para componentes de funcion
+* Para componentes puros, a mismas props mismo render
+* Solo se renderiza para cambios de props o hooks (useState, useContext...)
+
+_____
+
+### Sin React.memo
+
+Se repinta de cada vez
+
+<iframe lazy="loading" height="500" style="width: 100%;" scrolling="no" title="Without React.memo" src="https://codepen.io/sapetti/embed/preview/KKpXbEv?height=500&theme-id=dark&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/sapetti/pen/KKpXbEv'>Without React.memo</a> by Cesar Sapetti
+  (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+_____
+
+### Con React.memo
+
+Solo se pinta inicialmente o cuando cambien las props
+
+<iframe height="500" style="width: 100%;" scrolling="no" title="With React.memo" src="https://codepen.io/sapetti/embed/preview/abOLXvX?height=500&theme-id=dark&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/sapetti/pen/abOLXvX'>With React.memo</a> by Cesar Sapetti
+  (<a href='https://codepen.io/sapetti'>@sapetti</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+=====
+
 * [StrictMode](https://es.reactjs.org/docs/strict-mode.html)
 * Extensiones VS Code
   * sublime-babel-vscode
